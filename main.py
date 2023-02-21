@@ -27,15 +27,15 @@ def search():
     distance = args['distance'] if args['location'] else 10 
     location = args['location']
 
-    geocode = requests.get('https://maps.googleapis.com/maps/api/geocode/json?address='+location+'&key=AIzaSyAmdJz9Bdu1d2HdFjpNh_gFZQs6uAVl-u4').json()
+    geocode = requests.get('https://maps.googleapis.com/maps/api/geocode/json?address='+location+'&key=API_KEY').json()
     lat = geocode['results'][0]['geometry']['location']['lat']
     lng = geocode['results'][0]['geometry']['location']['lng']
     
     geoHash = geohash.encode(lat, lng, 7)
     if args['category'] != 'Default':
-        response = requests.get('https://app.ticketmaster.com/discovery/v2/events.json?apikey=GOVjKESgIKqy9VPURGr8Gn3zvIdCLMLg'+ '&keyword='+keyword+'&segmentId='+genre[args['category']]+'%20&radius='+distance+'&unit=miles'+'&geoPoint='+geoHash)
+        response = requests.get('https://app.ticketmaster.com/discovery/v2/events.json?apikey=API_KEY'+ '&keyword='+keyword+'&segmentId='+genre[args['category']]+'%20&radius='+distance+'&unit=miles'+'&geoPoint='+geoHash)
     else:
-        response = requests.get('https://app.ticketmaster.com/discovery/v2/events.json?apikey=GOVjKESgIKqy9VPURGr8Gn3zvIdCLMLg'+ '&keyword='+keyword+'%20&radius='+distance+'&unit=miles'+'&geoPoint='+geoHash)
+        response = requests.get('https://app.ticketmaster.com/discovery/v2/events.json?apikey=API_KEY'+ '&keyword='+keyword+'%20&radius='+distance+'&unit=miles'+'&geoPoint='+geoHash)
 
     response = response.json()
     
@@ -67,7 +67,7 @@ def getEvent():
 
     id = args['id']
 
-    response = requests.get('https://app.ticketmaster.com/discovery/v2/events/'+id+'?apikey=GOVjKESgIKqy9VPURGr8Gn3zvIdCLMLg')
+    response = requests.get('https://app.ticketmaster.com/discovery/v2/events/'+id+'?apikey=API_KEY')
     event = response.json()
 
     if 'attractions' in event['_embedded']:
@@ -112,7 +112,7 @@ def getVenueDetails():
 
     keyword = args['keyword']
 
-    response = requests.get('https://app.ticketmaster.com/discovery/v2/venues?apikey=GOVjKESgIKqy9VPURGr8Gn3zvIdCLMLg&keyword='+keyword)
+    response = requests.get('https://app.ticketmaster.com/discovery/v2/venues?apikey=API_KEY&keyword='+keyword)
     venue = response.json()
 
     if '_embedded' in venue:
