@@ -1,0 +1,229 @@
+body{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+label{
+    color: skyblue;
+    margin-bottom: 3px;
+    font-size: 15px;
+}
+
+.form-header{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 42px;
+}
+
+hr{
+    color: white;
+    margin-bottom: 34px;
+}
+
+.event-search{
+    margin-right: auto;
+    margin-left: auto;
+    width: 38%;
+    padding: 20px;
+    background: #ffffff2e;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+input::placeholder{
+    color: whitesmoke;
+    margin: 10px;
+}    
+
+.field{
+    padding-left: 10px;
+    color: white;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    background: transparent;
+    border: 1px solid #ffffff8a;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+}
+
+.asteriks{
+    color: red;
+    font-size: small;
+}
+
+.clear{
+    background-color: #426097;
+    border-color: #426097;
+    box-shadow: 0px 5px #283b5e;
+    border: none;
+    width: 18%;
+    margin-right: 2px;
+    padding: 10px;
+    height: 45px;
+    color: white;
+    border-radius: 8px;
+}
+
+.search{
+    background-color: #ff8300;
+    box-shadow: 0px 5px #c16607;
+    border-right: none;
+    border: none;
+    width: 18%;
+    margin-right: 2px;
+    padding: 10px;
+    height: 45px;
+    color: white;
+    border-radius: 8px;
+}
+
+.events{
+    background: white;
+    width: 80%;
+    margin: auto;
+}
+
+.mid-div{
+    display: flex;
+}
+
+.mid-elements{
+    width: 50%;
+}
+
+.distance{
+    width: 68%;
+}
+
+.auto{
+    color: white;
+}
+
+.icon{
+    width: 100px;
+    height: 50px;
+}
+
+td{
+    margin: auto;
+}
+
+th{
+    padding: 12px;
+    box-shadow: 0px 5px #bfbfbf2e;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+.event-header{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 38px;
+}
+
+.event-view{
+    margin: auto;
+    width: 66%;
+    padding: 20px;
+    background: #ffffff5c;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.event-details{
+    display: flex;
+}
+
+.event-breakdown{
+    margin: auto;
+    margin-left: unset;
+    width: 40%;
+}
+
+.venue-map{
+    margin: auto;
+    padding: 100px;
+    width: 60%;
+}
+
+.seatmap{
+    width: 500px;
+}
+
+.detail{
+    padding: 5px;
+}
+
+.arrow-down{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-left: 100px;
+    width: 20px;
+    height: 20px;
+}
+
+.nav-venue-details{
+    display: flex;
+}
+
+.label-venue{
+    padding-top: 30px;
+    color: white;
+    font-size: 30px;
+    margin: auto;
+}
+
+.venue-container{
+    display: flex;
+}
+
+.venue-details-outer{
+    background: white;
+    width: fit-content;
+    margin: auto;
+}
+
+.address-input{
+    border: none;
+}
+
+.address-label{
+    color: unset;
+    font-weight: bold;
+}
+
+.address{
+    display: flex;
+}
+
+.venue-details{
+    display: flex;
+}
+
+.venue-header{
+    display: flex;
+}
+
+.venue-header-label{
+    font-size: 25px;
+    text-decoration: underline;
+    margin: auto;
+}
