@@ -1,1 +1,0 @@
-# CSCI-526-Event-Search
