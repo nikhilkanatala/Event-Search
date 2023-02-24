@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <link type="text/css" rel="stylesheet" href="../static/events.css">
+    <script type="text/javascript" src="../static/script.js"></script>
+</head>
+<body>
+    <div class="container">
+    <form class="event-search" id="event-form">
+        <span class="form-header">Events Search</span>
+        <hr>
+        <label>Keyword<span class="asteriks">*</span></label><br>
+        <input class="field" type="text" name="keyword" required><br>
+        
+        <div class="mid-div">
+            <div class="mid-elements">
+                <label>Distance(miles)</label>
+            </div>
+            <div class="mid-elements">
+                <label>Category<span class="asteriks">*</span></label>
+            </div>
+        </div>
+        <div class="mid-div">
+            <div class="mid-elements">
+                <input class="field distance" type="number" name="distance" placeholder="10" min="1">
+            </div>
+            <div class="mid-elements">
+                <select class="field" id="category" name="category">
+                    <option value="Default">Default</option>
+                    <option value="Music">Music</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Arts & Theatre">Arts & Theatre</option>
+                    <option value="Film">Film</option>
+                    <option value="Miscellaneous">Miscellaneous</option>
+                </select>
+            </div>        
+        </div>
+        <label>Location<span class="asteriks">*</span>&nbsp;&nbsp;</label>
+        <input type="checkbox" onclick="detectLocation()" id="autoDetect"><label class="auto">&nbsp;Auto-Detect Location</label><br>
+        <input class="field" type="text" id="location" name="location" required><br><br> 
+
+        <input class="button search" type="submit" value="SEARCH">
+        <input class="button clear" type="reset" value="CLEAR" onclick="ClearForm()">
+    </form>
+    <br><br>
+
+    <table class="events" id="events" cellspacing="10" hidden></table>
+
+    <div id="event-view"></div>
+    <div id="showVenueDetails" class="nav-venue-details"></div>
+
+    <div class="venue-container" id="venueDetails"></div>
+    </div>
+</body>

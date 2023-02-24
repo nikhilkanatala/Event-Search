@@ -1,0 +1,406 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container{
+    min-width: 1024px;
+}
+
+label{
+    color: skyblue;
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-family: Optima;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: purple;
+}
+
+.form-header{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 42px;
+    font-family: Optima;
+}
+
+.event-search{
+    margin-right: auto;
+    margin-left: auto;
+    width: 38%;
+    padding: 20px;
+    background: #ffffff2e;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.empty{
+    color: red;
+}
+
+input::placeholder{
+    color: whitesmoke;
+    margin: 10px;
+}    
+
+.field{
+    padding-left: 10px;
+    color: white;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    background: transparent;
+    border: 1px solid #ffffff8a;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+}
+
+.asteriks{
+    color: red;
+    font-size: small;
+    font-family: Optima;
+}
+
+.clear{
+    background-color: #426097;
+    border-color: #426097;
+    box-shadow: 0px 3px #38558a;
+    border: none;
+    width: 18%;
+    margin-right: 2px;
+    padding: 10px;
+    height: 45px;
+    color: white;
+    border-radius: 8px;
+}
+
+.clear:hover{
+    background-color: #5e7298;
+}
+
+.search{
+    background-color: #ff8300;
+    box-shadow: 0px 3px #c16607;
+    border-right: none;
+    border: none;
+    width: 18%;
+    margin-right: 2px;
+    padding: 10px;
+    height: 45px;
+    color: white;
+    border-radius: 8px;
+}
+
+.search:hover{
+    background-color: #fcbe7c;
+}
+
+.events{
+    background: white;
+    width: 80%;
+    margin: auto;
+}
+
+.mid-div{
+    display: flex;
+}
+
+.mid-elements{
+    width: 50%;
+}
+
+.distance{
+    width: 68%;
+}
+
+.auto{
+    color: white;
+}
+
+.icon{
+    width: 65px;
+    height: 40px;
+}
+
+td{
+    margin: auto;
+    text-align: center;
+}
+
+.date, .image, .event-name, .venue-name{
+    padding-inline: 30px;
+    padding-block: 6px;
+}
+
+th{
+    padding: 12px;
+    box-shadow: 0px 5px #bfbfbf2e;
+    background: #eeeded3d;
+    cursor: pointer;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+.event-header{
+    display: table;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 35px;
+    font-family: Optima;
+}
+
+.event-view{
+    margin: auto;
+    width: 66%;
+    padding: 20px;
+    background: #ffffff2e;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.event-details{
+    display: flex;
+}
+
+.event-breakdown{
+    margin-right: auto;
+    margin-left: unset;
+    width: 40%;
+}
+
+.venue-map{
+    margin: auto;
+    display: flex;
+}
+
+.seatmap{
+    aspect-ratio: 1;
+    max-height: 400px;
+    margin: auto;
+}
+
+.detail{
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.detail a{
+    color: #54cdff;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.detail a:hover{
+    color: purple;
+}
+
+.detail input{
+    border: unset;
+    color: white;
+    padding: 4px;
+    font-size: 15px;
+    font-family: Optima;
+    border-radius: 7px;
+    padding: 3px;
+    margin-left: 5px;
+}
+
+.detail #onsale{
+    background: #00a212;
+}
+
+.detail #offsale{
+    background: red;
+}
+
+.detail #rescheduled, .div #postponed{
+    background: #ffb225;
+}
+
+.detail #cancelled{
+    background: black;
+}
+
+
+.arrow-down{
+    border: solid lightgray;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+    margin-left: 80px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.arrow-down:hover{
+    border: solid white;
+    border-width: 0 1px 1px 0;
+}
+
+.nav-venue-details{
+    display: flex;
+}
+
+.label-venue{
+    padding: 30px;
+    color: white;
+    font-size: 25px;
+    font-family: Optima;
+    margin: auto;
+}
+
+.venue-container{
+    display: flex;
+    border-radius: 20px;
+    background: white;
+    width: 68%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.venue-details-outer{
+    width: 100%;
+    border: 1px solid black;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+.venue-details-inner{
+    padding: 20px;
+}
+
+.address-input{
+    background-color: rgba(255, 251, 251, 0.4);
+    border: none;
+    font-size: 17px;
+}
+
+.region{
+   margin-left: 82px; 
+}
+
+input:focus{
+    outline: none;
+}
+
+.address-label{
+    color: unset;
+    font-weight: bold;
+    margin-left: auto;
+    font-size: 20px;
+    font-family: Optima;
+}
+
+.address{
+    display: flex;
+}
+
+.address-content{
+    margin-right: auto;
+    padding-left: 8px;
+}
+
+.venue-details{
+    display: flex;
+    padding: 20px;
+}
+
+.venue-details #address{
+    margin-left: auto;
+    border-right: 1px solid black;
+}
+
+.venue-details #address a{
+    display: block;
+    text-align: center;
+    padding-right: 65px;
+    text-decoration: none;
+    color: #78bbd7;
+    font-size: 19px;
+    font-family: Optima;
+}
+
+.venue-details #address a:hover{
+    color: purple;
+}
+
+.venue-details #moreEvents{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.venue-details #moreEvents a{
+    text-decoration: none;
+    color: #78bbd7;
+    font-size: 19px;
+    font-family: Optima;
+}
+
+.venue-details #moreEvents a:hover{
+    color: purple;
+}
+
+.venue-header{
+    display: flex;
+}
+
+.venue-header img{
+    margin: auto;
+    width: 75px;
+    aspect-ratio: 1;
+}
+
+.venue-header-label{
+    font-size: 25px;
+    font-family: Optima;
+    margin: auto;
+  }
+
+.event-label{
+    font-size: 18px;
+    font-family: Optima;
+    color: #7afae4;
+    font-family: Geneva;
+    display: block;
+    padding: 3px;
+}
+
+.event-value{
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    font-family: Optima;
+    padding: 3px;
+}
+
+hr{
+    font-size: 10px;
+    color: #aeaeae;
+    margin-bottom: 34px;
+    width: 101%;
+    margin-right: 16px;
+}
