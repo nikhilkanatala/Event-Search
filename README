@@ -1,0 +1,5 @@
+README - description
+
+The purpose of this web development project is to create a user-friendly webpage that facilitates searching for event information through the Ticketmaster API. The page is designed to display search results in a tabular format, with detailed information about each event and venue provided to the user. This project aims to provide a streamlined and informative experience for users seeking event information, leveraging the Ticketmaster API to offer a comprehensive and up-to-date database of events.
+
+WIP - Transition to Angular with added functionality.
